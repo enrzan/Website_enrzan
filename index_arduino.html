@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title">Arduino</title>
+    <link rel="stylesheet" href="site/style_title.css">
+    <style>
+        .container {
+            position: relative;
+            height: 50vh; /* Altura da viewport, opcional */
+        }
+        .img-resize {
+            width: 300px;
+            height: auto; 
+            position: absolute;
+            right: 175px; /* Alinha a imagem ao canto direito */
+            top: 0%; /* Centraliza verticalmente */
+            transform: translateY(-125%); /* Ajusta a centralização vertical */
+        }
+        .back-button {
+            width: 50px;
+            height: auto;
+            position: absolute;
+            right: 10px; /* Ajusta a posição à direita */
+            top: 10px; /* Ajusta a posição no topo */
+        }
+        .title {
+            color: black; /* Cor do texto preta */
+            text-shadow: 
+                -1px -1px 0 green,  
+                1px -1px 0 green,
+                -1px 1px 0 green,
+                1px 1px 0 green; /* Contorno branco */
+            padding: 10px; /* Espaçamento interno para melhorar a aparência */
+            text-align: center;
+            font-size: 2em; /* Tamanho inicial do título */
+            border: 5px solid green; /* Borda verde */
+            background-color: rgba(0, 0, 0, 1); /* Fundo semi-transparente para melhor legibilidade */
+        }
+        .links {
+            font-size: 1em; /* Tamanho inicial dos links */
+        }
+        .links a {
+            color: black; /* Definindo a cor dos links como preta */
+            text-shadow: 
+                -1px -1px 0 green,  
+                1px -1px 0 green,
+                -1px 1px 0 green,
+                1px 1px 0 green; /* Contorno branco */
+            text-decoration: underline; /* Mantendo o sublinhado dos links */
+        }
+        .links ul {
+            list-style-type: disc; /* Definindo o estilo da lista como disco (padrão) */
+            padding-left: 20px; /* Adicionando um recuo à esquerda para os itens da lista */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1 class="title">Arduino</h1>
+        </header>
+        <article>
+            <p>O Arduino foi o meu ponto de partida para a área de circuitos, desde sempre tive um gosto em desmontar circuitos eletrônicos, mas apenas para diversão e geralmente sem ter que remontá-los corretamente. Entretanto, basicamente da noite para o dia comecei a mexer com uma placa de Arduino Uno que ganhei e com o Autodesk Tinkercad para auxiliar em meus projetos, além de inúmeras apostilas e conteúdos digitais gratuitos. Com isso, comecei um novo hobby que aos poucos se tornou minha paixão e que pretendo me especializar e aperfeiçoar.</p>
+            <p>Conforme fazia meus projetos, eu os salvava e guardava-os de forma a ficarem organizados e servirem como uma forma de consulta para outros projetos.</p>
+            <p>Pensando nisso, deixo a seguir os links, respectivamente de meu repositório no GitHub com os códigos de Arduino escritos em C++ e meu perfil no Tinkercad no qual é possível ver todos os meus projetos, inclusive com seus respectivos códigos.</p>
+            <li class="links"><a href="https://github.com/enrzan/Arduino_Codigos">Repositório de Arduino</a></li>
+            <li class="links"><a href="https://www.tinkercad.com/users/5zlXzHxFWNF?type=circuits">Projetos no Tinkercad</a></li>
+        </article>
+        <div class="container">
+            <a href="index.html"><img src="imagens/Round-Back-Button-PNG-Image-Background.png" alt="Voltar" class="back-button"></a>
+        </div>
+    </main>
+</body>
+</html>

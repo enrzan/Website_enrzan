@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title">Python</title>
+    <link rel="stylesheet" href="site/style_title.css">
+    <style>
+        .container {
+            position: relative;
+            height: 50vh; /* Altura da viewport, opcional */
+        }
+        .img-resize {
+            width: 300px;
+            height: auto; 
+            position: absolute;
+            right: 175px; /* Alinha a imagem ao canto direito */
+            top: 0%; /* Centraliza verticalmente */
+            transform: translateY(-125%); /* Ajusta a centralização vertical */
+        }
+        .back-button {
+            width: 50px;
+            height: auto;
+            position: absolute;
+            right: 10px; /* Ajusta a posição à direita */
+            top: 10px; /* Ajusta a posição no topo */
+        }
+        .title {
+            color: black; /* Cor do texto preta */
+            text-shadow: 
+                -1px -1px 0 green,  
+                1px -1px 0 green,
+                -1px 1px 0 green,
+                1px 1px 0 green; /* Contorno branco */
+            padding: 10px; /* Espaçamento interno para melhorar a aparência */
+            text-align: center;
+            font-size: 2em; /* Tamanho inicial do título */
+            border: 5px solid green; /* Borda verde */
+            background-color: rgba(0, 0, 0, 1); /* Fundo semi-transparente para melhor legibilidade */
+        }
+        .links {
+            font-size: 1em; /* Tamanho inicial dos links */
+        }
+        .links a {
+            color: black; /* Definindo a cor dos links como preta */
+            text-shadow: 
+                -1px -1px 0 green,  
+                1px -1px 0 green,
+                -1px 1px 0 green,
+                1px 1px 0 green; /* Contorno branco */
+            text-decoration: underline; /* Mantendo o sublinhado dos links */
+        }
+        .links ul {
+            list-style-type: disc; /* Definindo o estilo da lista como disco (padrão) */
+            padding-left: 20px; /* Adicionando um recuo à esquerda para os itens da lista */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1 class="title">Python</h1>
+        </header>
+        <article>
+            <p>Na Universidade Federal do ABC foi onde tive meus primeiros contatos com programação, mais especificamente em Python, a qual é a linguagem mais ensinada na UFABC por diversos fatores.</p>
+            <p>Sendo assim, ao decorrer do curso, tive que fazer inúmeros exercícios e fui pegando gosto por eles, até o ponto que comecei a estudar mais por fora e criar projetos para treinar. O link abaixo dá acesso ao meu repositório no GitHub em que disponibilizei todos os meus exercícios resolvidos e meus projetos, os quais foram feitos quase que exclusivamente no Google Colab, com exceção de algumas observações e apostilas em formato de texto corrido.</p>
+            <li class="links"><a href="https://github.com/enrzan/Pyton_GoogleColab">Repositório de Python</a></li>
+        </article>
+        <div class="container">
+            <a href="index.html"><img src="imagens/Round-Back-Button-PNG-Image-Background.png" alt="Voltar" class="back-button"></a>
+        </div>
+    </main>
+</body>
+</html>
