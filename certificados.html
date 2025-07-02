@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificados e Premiações</title>
+  <link rel="stylesheet" href="site/style_text.css" />
+  <link rel="stylesheet" href="site/style_title.css" />
+  <style>
+    body {
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      color: black;
+      text-shadow:
+        -1px -1px 0 green,
+        1px -1px 0 green,
+        -1px 1px 0 green,
+        1px 1px 0 green;
+      border: 3px solid green;
+      padding: 10px;
+      background-color: black;
+    }
+
+    .ano {
+      margin-top: 40px;
+      font-size: 1.5em;
+      color: green;
+      border-bottom: 2px solid green;
+      padding-bottom: 5px;
+    }
+
+    .certificado {
+      margin: 15px 0;
+    }
+
+    .certificado a {
+      cursor: pointer;
+      color: blue;
+      text-decoration: underline;
+    }
+
+    .imagem-certificado {
+      display: none;
+      margin-top: 10px;
+      max-width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .voltar {
+      margin-top: 30px;
+      display: block;
+      text-align: center;
+    }
+
+    .voltar a {
+      text-decoration: none;
+      background-color: green;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+  </style>
+
+  <script>
+    function toggleImagem(id) {
+      const img = document.getElementById(id);
+      img.style.display = img.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</head>
+<body>
+  <h1>Certificados e Premiações</h1>
+
+  <section>
+    <div class="ano">2025</div>
+    <div class="certificado">
+      <a onclick="toggleImagem('cert1')">Certificado de Curso de Primeiros Socorros</a>
+      <img id="cert1" class="imagem-certificado" src="img/certificados/primeiros_socorros.jpg" alt="Certificado 1">
+    </div>
+  </section>
+
+  <section>
+    <div class="ano">2024</div>
+    <div class="certificado">
+      <a onclick="toggleImagem('cert2')">Certificado de Participação em Hackathon</a>
+      <img id="cert2" class="imagem-certificado" src="img/certificados/hackathon.jpg" alt="Certificado 2">
+    </div>
+
+    <div class="certificado">
+      <a onclick="toggleImagem('cert3')">Certificado de Monitoria em Robótica</a>
+      <img id="cert3" class="imagem-certificado" src="img/certificados/monitoria_robotica.jpg" alt="Certificado 3">
+    </div>
+  </section>
+
+  <section>
+    <div class="ano">2023</div>
+    <div class="certificado">
+      <a onclick="toggleImagem('cert4')">Certificado de Participação no Congresso de Engenharia</a>
+      <img id="cert4" class="imagem-certificado" src="img/certificados/congresso_engenharia.jpg" alt="Certificado 4">
+    </div>
+  </section>
+
+  <div class="voltar">
+    <a href="index.html">Voltar ao Início</a>
+  </div>
+</body>
+</html>
