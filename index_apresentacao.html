@@ -1,165 +1,47 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title class="title">Apresentação do autor</title>
-  <link rel="stylesheet" href="site/style_text.css" />
-  <link rel="stylesheet" href="site/style_title.css" />
-  <style>
-    .container {
-      position: relative;
-      height: 50vh;
-    }
+<article style="padding: 20px;">
+  <img
+    src="imagens/EnricoZRaimundo_Foto_Perfil.jpg"
+    alt="Foto de Enrico Zangirolami Raimundo"
+    style="float: right; margin: 0 0 20px 20px; width: 250px; border-radius: 10px;"
+  />
 
-    .back-button {
-      width: 50px;
-      height: auto;
-      position: absolute;
-      right: 10px;
-      top: 10px;
-    }
+  <p>
+    Meu nome é Enrico Zangirolami Raimundo. Sou discente da Universidade
+    Federal do ABC no curso de Bacharelado em Ciências e Tecnologia (BC&T) e
+    como curso específico farei o bacharelado em Engenharia de Instrumentação,
+    Automação e Robótica (IAR).
+  </p>
 
-    .title {
-      color: black;
-      text-shadow: -1px -1px 0 green, 1px -1px 0 green, -1px 1px 0 green,
-        1px 1px 0 green;
-      padding: 10px;
-      text-align: center;
-      font-size: 2em;
-      border: 5px solid green;
-      background-color: rgba(0, 0, 0, 1);
-    }
+  <div style="clear: right;"></div> <!-- ISSO FORÇA O QUE VEM ABAIXO A IR PARA DEBAIXO DA IMAGEM -->
 
-    .links {
-      font-size: 1em;
-    }
+  <p>
+    Fui aluno bolsista de Iniciação Científica (IC) na área de Engenharia
+    de Materiais orientado pela Profa. Dra. Mara Cristina Lopes de Oliveira no
+    projeto intitulado “Desenvolvimento de processo de anodização da liga de
+    alumínio 2024-T3 com incorporação de materiais bidimensionais (2D) para
+    aumento da resistência à corrosão e desgaste” (Processo CNPq
+    406291/2022-5 de 01/04/2024 a 31/03/2025).
+  </p>
+  <p>
+    Atualmente iniciei minha segunda IC na área de Projeto de Circuitos
+    Integrados de Radiofrequência orientado pelo Prof. Dr. Carlos Eduardo
+    Capovilla.
+  </p>
+  <p>
+    Além disso, sou voluntário no IEEE (Institute of Electrical and
+    Electronics Engineers), mais especificamente na RAS (Robotics and
+    Automation Society), no qual visamos o desenvolvimento de robôs de combate
+    para competições, para fins de pesquisas.
+  </p>
+  <p>
+    Tenho como paixão circuitos elétricos, programação e simulação em
+    Softwares CAD (Computer-Aided Design), busco me aprofundar nessa área, e
+    de preferência dominá-las.
+  </p>
 
-    .links a {
-      color: black;
-      text-shadow: -1px -1px 0 green, 1px -1px 0 green, -1px 1px 0 green,
-        1px 1px 0 green;
-      text-decoration: underline;
-    }
-
-    .links ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-
-    .author-content {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      gap: 20px;
-      padding: 20px;
-      flex-wrap: wrap;
-    }
-
-    .author-text {
-      flex: 1 1 300px;
-      min-width: 280px;
-    }
-
-    .author-photo {
-      flex: 0 0 auto;
-      width: 250px;
-    }
-
-    .author-photo img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-    }
-
-    @media (max-width: 700px) {
-      .author-content {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .author-photo {
-        width: 60%;
-        margin-bottom: 20px;
-      }
-
-      .author-text {
-        text-align: justify;
-      }
-    }
-  </style>
-</head>
-<body>
-  <main>
-    <header>
-      <h1 class="title">Apresentação do autor</h1>
-    </header>
-
-    <article class="author-content">
-      <div class="author-text">
-        <p>
-          Meu nome é Enrico Zangirolami Raimundo. Sou discente da Universidade
-          Federal do ABC no curso de Bacharelado em Ciências e Tecnologia
-          (BC&T) e como curso específico farei o bacharelado em Engenharia de
-          Instrumentação, Automação e Robótica (IAR).
-        </p>
-        <p>
-          Fui aluno bolsista de Iniciação Científica (IC) na área de Engenharia
-          de Materiais orientado pela Profa. Dra. Mara Cristina Lopes de
-          Oliveira no projeto intitulado “Desenvolvimento de processo de
-          anodização da liga de alumínio 2024-T3 com incorporação de materiais
-          bidimensionais (2D) para aumento da resistência à corrosão e
-          desgaste” (Processo CNPq 406291/2022-5 de 01/04/2024 a 31/03/2025).
-        </p>
-        <p>
-          Atualmente iniciei minha segunda IC na área de Projeto de Circuitos
-          Integrados de Radiofrequência orientado pelo Prof. Dr. Carlos Eduardo
-          Capovilla.
-        </p>
-        <p>
-          Além disso, sou voluntário no IEEE (Institute of Electrical and
-          Electronics Engineers), mais especificamente na RAS (Robotics and
-          Automation Society), no qual visamos o desenvolvimento de robôs de
-          combate para competições, para fins de pesquisas.
-        </p>
-        <p>
-          Tenho como paixão circuitos elétricos, programação e simulação em
-          Softwares CAD (Computer-Aided Design), busco me aprofundar nessa
-          área, e de preferência dominá-las.
-        </p>
-        <ul class="links">
-          <li><a href="https://github.com/enrzan">GitHub</a></li>
-          <li>
-            <a
-              href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K1523002T0"
-              >Lattes</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/enrico-zangirolami-raimundo-a85987359/"
-              >Linkedin</a
-            >
-          </li>
-        </ul>
-      </div>
-
-      <div class="author-photo">
-        <img
-          src="imagens/EnricoZRaimundo_Foto_Perfil.jpg"
-          alt="Foto de Enrico Zangirolami Raimundo"
-        />
-      </div>
-    </article>
-
-    <div class="container">
-      <a href="index.html"
-        ><img
-          src="imagens/Round-Back-Button-PNG-Image-Background.png"
-          alt="Voltar"
-          class="back-button"
-      /></a>
-    </div>
-  </main>
-</body>
-</html>
+  <ul class="links">
+    <li><a href="https://github.com/enrzan">GitHub</a></li>
+    <li><a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K1523002T0">Lattes</a></li>
+    <li><a href="https://www.linkedin.com/in/enrico-zangirolami-raimundo-a85987359/">Linkedin</a></li>
+  </ul>
+</article>
