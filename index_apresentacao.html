@@ -54,31 +54,27 @@
     }
 
     .author-content {
-      display: flex;
-      flex-direction: column;
       padding: 20px;
     }
 
-    .author-photo {
-      align-self: flex-end;
+    .author-text img {
+      float: right;
+      margin: 0 0 10px 20px;
       width: 250px;
-      margin-bottom: 20px;
-    }
-
-    .author-photo img {
-      width: 100%;
-      height: auto;
       border-radius: 10px;
     }
 
-    .author-text {
-      text-align: justify;
+    .author-text::after {
+      content: "";
+      display: block;
+      clear: both;
     }
 
     @media (max-width: 700px) {
-      .author-photo {
-        width: 80%;
-        align-self: center;
+      .author-text img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto;
       }
 
       .author-text {
@@ -95,11 +91,9 @@
 
     <!-- ÁREA PRINCIPAL -->
     <article class="author-content">
-      <div class="author-photo">
-        <img src="imagens/EnricoZRaimundo_Foto_Perfil.jpg" alt="Foto de Enrico Zangirolami Raimundo" />
-      </div>
-
       <div class="author-text">
+        <img src="imagens/EnricoZRaimundo_Foto_Perfil.jpg" alt="Foto de Enrico Zangirolami Raimundo" />
+
         <p>Meu nome é Enrico Zangirolami Raimundo. Sou discente da Universidade Federal do ABC no curso de Bacharelado em Ciências e Tecnologia (BC&T) e como curso específico farei o bacharelado em Engenharia de Instrumentação, Automação e Robótica (IAR).</p>
 
         <p>Fui aluno bolsista de Iniciação Científica (IC) na área de Engenharia de Materiais orientado pela Profa. Dra. Mara Cristina Lopes de Oliveira no projeto intitulado “Desenvolvimento de processo de anodização da liga de alumínio 2024-T3 com incorporação de materiais bidimensionais (2D) para aumento da resistência à corrosão e desgaste” (Processo CNPq 406291/2022-5 de 01/04/2024 a 31/03/2025).</p>
