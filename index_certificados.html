@@ -56,12 +56,16 @@
     .certificado a {
       cursor: pointer;
       color: black;
-      text-decoration: underline;
+      text-decoration: none; /* Removido sublinhado */
       text-shadow:
         -1px -1px 0 green,
          1px -1px 0 green,
         -1px  1px 0 green,
          1px  1px 0 green;
+    }
+
+    .certificado a:hover {
+      text-decoration: underline; /* Sublinhado no hover */
     }
 
     .imagem-certificado {
