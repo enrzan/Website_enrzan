@@ -1,110 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Certificados e Premiações</title>
+  <link rel="icon" href="imagens/icon.png" type="image/x-icon">
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #fdfdfd;
+      background: linear-gradient(to right, #006400, #32CD32);
+      color: black;
     }
+
+    header {
+      text-align: center;
+      background-color: black;
+      color: green;
+      border: 5px solid green;
+      padding: 10px 0;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+      text-shadow: 2px 2px 0 green;
+    }
+
+    section {
+      background-color: #4CAF50;
+      margin: 30px;
+      padding: 20px;
+      border: 5px solid green;
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    }
+
     .ano {
-      font-size: 1.8em;
+      font-size: 1.5em;
       font-weight: bold;
-      margin-top: 40px;
-      border-bottom: 2px solid #333;
+      margin-bottom: 15px;
+      border-bottom: 2px solid black;
     }
+
     .certificado {
-      margin: 15px 0;
+      margin: 10px 0;
     }
+
     .certificado a {
-      cursor: pointer;
-      color: #0066cc;
+      color: black;
+      font-weight: bold;
       text-decoration: underline;
+      cursor: pointer;
+      display: inline-block;
+      margin-bottom: 8px;
+      text-shadow: 
+        -1px -1px 0 green,  
+        1px -1px 0 green,
+        -1px 1px 0 green,
+        1px 1px 0 green;
     }
+
     .imagem-certificado {
       display: none;
+      max-width: 100%;
       margin-top: 10px;
-      max-width: 90%;
-      border: 2px solid #ddd;
-      border-radius: 6px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border: 3px solid black;
     }
   </style>
-  <script>
-    function toggleImagem(id) {
-      const img = document.getElementById(id);
-      if (img.style.display === "none" || img.style.display === "") {
-        img.style.display = "block";
-      } else {
-        img.style.display = "none";
-      }
-    }
-  </script>
 </head>
 <body>
-  <h1>Certificados e Premiações</h1>
+  <header>
+    <h1>Certificados e Premiações</h1>
+  </header>
 
   <section>
     <div class="ano">2025</div>
-
     <div class="certificado">
       <a onclick="toggleImagem('cert_ic')">Declaração de Iniciação Científica - UFABC</a>
-      <img id="cert_ic" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificad_IC_page-0001.jpg" alt="Certificado IC">
+      <img id="cert_ic" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificad_IC_page-0001.jpg" alt="IC UFABC">
     </div>
-
     <div class="certificado">
       <a onclick="toggleImagem('cert_vencedor')">Robô Mais Bonito - Tamandutech</a>
-      <img id="cert_vencedor" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_Vencedor_Mais_Bonito_Processo_Seletivo_2025_Tamandutech_rotated_page-0001.jpg" alt="Certificado Tamandutech">
+      <img id="cert_vencedor" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_Vencedor_Mais_Bonito_Processo_Seletivo_2025_Tamandutech_rotated_page-0001.jpg" alt="Tamandutech">
     </div>
   </section>
 
   <section>
     <div class="ano">2024</div>
-
     <div class="certificado">
       <a onclick="toggleImagem('cert_xiv')">XIV Encontro de Iniciação Científica - UFABC</a>
-      <img id="cert_xiv" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_XIV_Encontro_IC_UFABC_page-0001.jpg" alt="Certificado XIV Encontro IC">
+      <img id="cert_xiv" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_XIV_Encontro_IC_UFABC_page-0001.jpg" alt="XIV IC UFABC">
     </div>
-
     <div class="certificado">
-      <a onclick="toggleImagem('cert_cad')">Curso CAD 2D - Fusion 360</a>
-      <img id="cert_cad" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_CAD.png" alt="Certificado CAD">
+      <a onclick="toggleImagem('cert_cae')">Aulão de Análise por Elementos Finitos (CAE) - UFABC</a>
+      <img id="cert_cae" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_CAD.png" alt="CAE UFABC">
     </div>
   </section>
 
   <section>
     <div class="ano">2023</div>
-
     <div class="certificado">
-      <a onclick="toggleImagem('cert_fmabc')">Treinamento de Catástrofe - FMABC</a>
-      <img id="cert_fmabc" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_Treinamento_Catastrofe_FMABC.png" alt="Certificado FMABC">
+      <a onclick="toggleImagem('cert_simulacao')">Simulação de Múltiplas Vítimas - FMABC</a>
+      <img id="cert_simulacao" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_Treinamento_Catastrofe_FMABC.png" alt="FMABC Múltiplas Vítimas">
     </div>
   </section>
 
   <section>
     <div class="ano">2022</div>
-
     <div class="certificado">
       <a onclick="toggleImagem('cert_oba')">Olimpíada Brasileira de Astronomia - OBA</a>
-      <img id="cert_oba" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_OBA-girado_page-0001.jpg" alt="Certificado OBA">
+      <img id="cert_oba" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_OBA-girado_page-0001.jpg" alt="OBA">
     </div>
-
     <div class="certificado">
       <a onclick="toggleImagem('cert_em')">Certificado de Conclusão - Ensino Médio</a>
-      <img id="cert_em" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_EM_page-0001.jpg" alt="Certificado EM">
+      <img id="cert_em" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_EM_page-0001.jpg" alt="Ensino Médio">
     </div>
   </section>
 
   <section>
     <div class="ano">2018</div>
-
     <div class="certificado">
       <a onclick="toggleImagem('cert_primeiros')">Curso de Primeiros Socorros</a>
-      <img id="cert_primeiros" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_Primeiros_Socorros_rotated_page-0001.jpg" alt="Certificado Primeiros Socorros">
+      <img id="cert_primeiros" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_Primeiros_Socorros_rotated_page-0001.jpg" alt="Primeiros Socorros">
     </div>
   </section>
+
+  <script>
+    function toggleImagem(id) {
+      const img = document.getElementById(id);
+      img.style.display = img.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
+
 
 </body>
 </html>
