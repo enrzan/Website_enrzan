@@ -6,26 +6,18 @@
     <title class="title">Python</title>
     <link rel="stylesheet" href="site/style_title.css">
     <style>
-        .container {
-            position: relative;
-            height: 50vh;
+        body {
+            background-color: green;
+            margin: 0;
+            font-family: Arial, sans-serif;
         }
 
-        .img-resize {
-            width: 300px;
-            height: auto; 
-            position: absolute;
-            right: 175px;
-            top: 0%;
-            transform: translateY(-125%);
-        }
-
-        .back-button {
-            width: 50px;
-            height: auto;
-            position: absolute;
-            right: 10px;
-            top: 10px;
+        .container-main {
+            background-color: #5cb85c;
+            width: 70%;
+            margin: 30px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px black;
         }
 
         .title {
@@ -39,11 +31,8 @@
             text-align: center;
             font-size: 2em;
             border: 5px solid green;
-            background-color: rgba(0, 0, 0, 1);
-        }
-
-        .links {
-            font-size: 1em;
+            background-color: black;
+            margin-bottom: 20px;
         }
 
         .links a {
@@ -60,25 +49,37 @@
             text-decoration: underline;
         }
 
-        .links ul {
-            list-style-type: disc;
-            padding-left: 20px;
+        .back-button {
+            width: 50px;
+            height: auto;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+        }
+
+        .back-button-container {
+            position: relative;
+            height: 60px;
         }
     </style>
 </head>
 <body>
-    <main>
+    <div class="container-main">
         <header>
             <h1 class="title">Python</h1>
         </header>
         <article>
             <p>Na Universidade Federal do ABC foi onde tive meus primeiros contatos com programação, mais especificamente em Python, a qual é a linguagem mais ensinada na UFABC por diversos fatores.</p>
             <p>Sendo assim, ao decorrer do curso, tive que fazer inúmeros exercícios e fui pegando gosto por eles, até o ponto que comecei a estudar mais por fora e criar projetos para treinar. O link abaixo dá acesso ao meu repositório no GitHub em que disponibilizei todos os meus exercícios resolvidos e meus projetos, os quais foram feitos quase que exclusivamente no Google Colab, com exceção de algumas observações e apostilas em formato de texto corrido.</p>
-            <li class="links"><a href="https://github.com/enrzan/Pyton_GoogleColab">Repositório de Python</a></li>
+            <ul class="links">
+                <li><a href="https://github.com/enrzan/Pyton_GoogleColab" target="_blank">Repositório de Python</a></li>
+            </ul>
         </article>
-        <div class="container">
-            <a href="index.html"><img src="imagens/Round-Back-Button-PNG-Image-Background.png" alt="Voltar" class="back-button"></a>
+        <div class="back-button-container">
+            <a href="index.html">
+                <img src="imagens/Round-Back-Button-PNG-Image-Background.png" alt="Voltar" class="back-button">
+            </a>
         </div>
-    </main>
+    </div>
 </body>
 </html>
