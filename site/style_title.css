@@ -1,3 +1,13 @@
+/* ========== CONFIGURAÇÕES GERAIS ========== */
+
+body {
+  background-color: green;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 18px;          /* Fonte-base aumentada */
+  line-height: 1.6;
+}
+
 /* ========== ESTILO TÍTULOS PRINCIPAIS ========== */
 
 .title, .titulo-enrzan {
@@ -64,13 +74,18 @@
 /* ========== RESPONSIVIDADE PARA TELAS PEQUENAS ========== */
 
 @media (max-width: 768px) {
+  body {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
   .container-main {
     width: 95%;
     padding: 15px;
   }
 
   .title, .titulo-enrzan {
-    font-size: 1.5em;
+    font-size: 1.7em;
     padding: 8px;
   }
 
@@ -91,17 +106,5 @@
 
   .links ul {
     padding-left: 15px;
-  }
-
-  .author-text img {
-    float: none;
-    display: block;
-    margin: 0 auto 20px auto;
-    width: 100%;
-    max-width: 250px;
-  }
-
-  .author-text {
-    text-align: left;
   }
 }
