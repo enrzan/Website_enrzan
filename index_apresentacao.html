@@ -24,9 +24,9 @@
       color: black;
       text-shadow:
         -1px -1px 0 green,
-        1px -1px 0 green,
-        -1px 1px 0 green,
-        1px 1px 0 green;
+         1px -1px 0 green,
+        -1px  1px 0 green,
+         1px  1px 0 green;
       padding: 10px;
       text-align: center;
       font-size: 2em;
@@ -42,10 +42,14 @@
       color: black;
       text-shadow:
         -1px -1px 0 green,
-        1px -1px 0 green,
-        -1px 1px 0 green,
-        1px 1px 0 green;
-      text-decoration: underline;
+         1px -1px 0 green,
+        -1px  1px 0 green,
+         1px  1px 0 green;
+      text-decoration: none; /* Removido sublinhado */
+    }
+
+    .links a:hover {
+      text-decoration: underline; /* Sublinhado no hover */
     }
 
     .links ul {
