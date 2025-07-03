@@ -4,164 +4,143 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Certificados e Premiações</title>
-  <link rel="icon" href="imagens/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="site/style_title.css" />
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #006400, #32CD32);
+      font-size: 18px;
+      margin: 30px;
+      background-color: #3ca240;
       color: black;
-      font-size: 1.3em;
     }
 
-    header {
+    h1 {
       text-align: center;
+      font-size: 2em;
       background-color: black;
       color: green;
       border: 5px solid green;
-      padding: 10px 0;
-    }
-
-    header h1 {
-      font-size: 2.5em;
-      margin: 0;
-      text-shadow: 2px 2px 0 green;
-    }
-
-    section {
-      background-color: #4CAF50;
-      margin: 30px;
-      padding: 20px;
-      border: 5px solid green;
-      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+      padding: 10px;
+      text-shadow: -1px -1px 0 green, 1px -1px 0 green, -1px 1px 0 green, 1px 1px 0 green;
     }
 
     .ano {
-      font-size: 1.5em;
       font-weight: bold;
-      margin-bottom: 15px;
-      border-bottom: 2px solid black;
+      font-size: 1.5em;
+      margin-top: 40px;
+      color: black;
+      text-shadow: -1px -1px 0 green, 1px -1px 0 green, -1px 1px 0 green, 1px 1px 0 green;
     }
 
     .certificado {
-      margin: 10px 0;
+      margin: 15px 0;
     }
 
     .certificado a {
-      color: black;
-      font-weight: bold;
-      text-decoration: underline;
       cursor: pointer;
-      display: inline-block;
-      margin-bottom: 8px;
-      text-shadow: 
-        -1px -1px 0 green,  
-        1px -1px 0 green,
-        -1px 1px 0 green,
-        1px 1px 0 green;
+      color: black;
+      text-shadow: -1px -1px 0 green, 1px -1px 0 green, -1px 1px 0 green, 1px 1px 0 green;
+      text-decoration: underline;
     }
 
     .imagem-certificado {
       display: none;
-      max-width: 100%;
-      margin-top: 10px;
+      max-width: 90%;
+      margin: 10px 0;
       border: 3px solid black;
     }
 
-    /* Estilo da seta de voltar */
-    .voltar {
-      position: fixed;
-      bottom: 15px;
-      right: 15px;
-      background-color: black;
-      border: 3px solid green;
-      border-radius: 50%;
+    .container {
+      position: relative;
+      height: 50vh;
+    }
+
+    .back-button {
       width: 50px;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      text-decoration: none;
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    }
-
-    .voltar::before {
-      content: "⮌";
-      font-size: 1.5em;
-      color: green;
-    }
-
-    .voltar:hover {
-      background-color: #222;
+      height: auto;
+      position: absolute;
+      right: 10px;
+      top: 10px;
     }
   </style>
-</head>
-<body>
-  <header>
-    <h1>Certificados e Premiações</h1>
-  </header>
-
-  <section>
-    <div class="ano">2025</div>
-    <div class="certificado">
-      <a onclick="toggleImagem('cert_ic')">Declaração de Iniciação Científica - UFABC</a>
-      <img id="cert_ic" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificad_IC_page-0001.jpg" alt="IC UFABC">
-    </div>
-    <div class="certificado">
-      <a onclick="toggleImagem('cert_vencedor')">Robô Mais Bonito - Tamandutech</a>
-      <img id="cert_vencedor" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_Vencedor_Mais_Bonito_Processo_Seletivo_2025_Tamandutech_rotated_page-0001.jpg" alt="Tamandutech">
-    </div>
-  </section>
-
-  <section>
-    <div class="ano">2024</div>
-    <div class="certificado">
-      <a onclick="toggleImagem('cert_xiv')">XIV Encontro de Iniciação Científica - UFABC</a>
-      <img id="cert_xiv" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_XIV_Encontro_IC_UFABC_page-0001.jpg" alt="XIV IC UFABC">
-    </div>
-    <div class="certificado">
-      <a onclick="toggleImagem('cert_cae')">Aulão de Análise por Elementos Finitos (CAE) - UFABC</a>
-      <img id="cert_cae" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_CAD.png" alt="CAE UFABC">
-    </div>
-  </section>
-
-  <section>
-    <div class="ano">2023</div>
-    <div class="certificado">
-      <a onclick="toggleImagem('cert_simulacao')">Simulação de Múltiplas Vítimas - FMABC</a>
-      <img id="cert_simulacao" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_Treinamento_Catastrofe_FMABC.png" alt="FMABC Múltiplas Vítimas">
-    </div>
-  </section>
-
-  <section>
-    <div class="ano">2022</div>
-    <div class="certificado">
-      <a onclick="toggleImagem('cert_oba')">Olimpíada Brasileira de Astronomia - OBA</a>
-      <img id="cert_oba" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_OBA-girado_page-0001.jpg" alt="OBA">
-    </div>
-    <div class="certificado">
-      <a onclick="toggleImagem('cert_em')">Certificado de Conclusão - Ensino Médio</a>
-      <img id="cert_em" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_EM_page-0001.jpg" alt="Ensino Médio">
-    </div>
-  </section>
-
-  <section>
-    <div class="ano">2018</div>
-    <div class="certificado">
-      <a onclick="toggleImagem('cert_primeiros')">Curso de Primeiros Socorros</a>
-      <img id="cert_primeiros" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_Primeiros_Socorros_rotated_page-0001.jpg" alt="Primeiros Socorros">
-    </div>
-  </section>
-
-  <!-- Botão de voltar -->
-  <a class="voltar" href="index.html" title="Voltar para o menu principal"></a>
 
   <script>
     function toggleImagem(id) {
       const img = document.getElementById(id);
-      img.style.display = img.style.display === "block" ? "none" : "block";
+      img.style.display = img.style.display === 'block' ? 'none' : 'block';
     }
   </script>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>Certificados e Premiações</h1>
+    </header>
+
+    <section>
+      <div class="ano">2025</div>
+
+      <div class="certificado">
+        <a onclick="toggleImagem('cert_ic')">Declaração de Iniciação Científica - UFABC</a>
+        <img id="cert_ic" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_IC_page-0001.jpg" alt="Certificado IC" />
+      </div>
+
+      <div class="certificado">
+        <a onclick="toggleImagem('cert_vencedor')">Robô Mais Bonito - Tamandutech</a>
+        <img id="cert_vencedor" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_Vencedor_Mais_Bonito_Processo_Seletivo_2025_Tamandutech_rotated_page-0001.jpg" alt="Certificado Tamandutech" />
+      </div>
+    </section>
+
+    <section>
+      <div class="ano">2024</div>
+
+      <div class="certificado">
+        <a onclick="toggleImagem('cert_xiv')">XIV Encontro de Iniciação Científica - UFABC</a>
+        <img id="cert_xiv" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_XIV_Encontro_IC_UFABC_page-0001.jpg" alt="Certificado XIV" />
+      </div>
+
+      <div class="certificado">
+        <a onclick="toggleImagem('cert_cad')">Curso CAD - UFABC</a>
+        <img id="cert_cad" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_CAD.png" alt="Certificado CAD" />
+      </div>
+    </section>
+
+    <section>
+      <div class="ano">2023</div>
+
+      <div class="certificado">
+        <a onclick="toggleImagem('cert_catastrofe')">Simulação de Catástrofe - FMABC</a>
+        <img id="cert_catastrofe" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_Treinamento_Catastrofe_FMABC.png" alt="Catástrofe FMABC" />
+      </div>
+    </section>
+
+    <section>
+      <div class="ano">2022</div>
+
+      <div class="certificado">
+        <a onclick="toggleImagem('cert_oba')">Olimpíada Brasileira de Astronomia - OBA</a>
+        <img id="cert_oba" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_OBA-girado_page-0001.jpg" alt="Certificado OBA" />
+      </div>
+
+      <div class="certificado">
+        <a onclick="toggleImagem('cert_em')">Certificado de Conclusão - Ensino Médio</a>
+        <img id="cert_em" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_EM_page-0001.jpg" alt="Certificado EM" />
+      </div>
+    </section>
+
+    <section>
+      <div class="ano">2018</div>
+
+      <div class="certificado">
+        <a onclick="toggleImagem('cert_primeiros')">Curso de Primeiros Socorros</a>
+        <img id="cert_primeiros" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_Primeiros_Socorros_rotated_page-0001.jpg" alt="Primeiros Socorros" />
+      </div>
+    </section>
+
+    <div class="container">
+      <a href="index.html"><img src="imagens/Round-Back-Button-PNG-Image-Background.png" alt="Voltar" class="back-button"></a>
+    </div>
+  </main>
 </body>
 </html>
