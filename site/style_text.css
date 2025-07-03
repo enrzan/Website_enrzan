@@ -1,5 +1,3 @@
-/* ========== ESTILO DO TEXTO DA ABA "APRESENTAÇÃO DO AUTOR" ========== */
-
 .author-text {
   font-size: 18px;
   line-height: 1.7;
@@ -19,7 +17,6 @@
   clear: both;
 }
 
-/* ========== LINKS ========== */
 
 .links a {
   color: black;
@@ -40,7 +37,6 @@
   padding-left: 20px;
 }
 
-/* ========== RESPONSIVIDADE PARA TELAS PEQUENAS ========== */
 
 @media (max-width: 768px) {
   .author-text {
