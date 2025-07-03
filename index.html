@@ -29,7 +29,7 @@
          1px  1px 0 green;
       padding: 8px;
       text-align: center;
-      font-size: 3em; /* título bem maior */
+      font-size: 3em;
       font-weight: bold;
       border: 5px solid green;
       background-color: rgba(0, 0, 0, 1);
@@ -41,7 +41,7 @@
       margin: 0 auto 20px auto;
       border: 5px solid green;
       width: 100%;
-      height: 160px; /* imagem mais fina */
+      height: 160px;
       object-fit: cover;
     }
 
@@ -50,7 +50,12 @@
       padding-left: 20px;
     }
 
+    li {
+      margin: 10px 0;
+    }
+
     li a {
+      display: inline-block; /* Garante área de clique */
       color: black;
       text-decoration: underline;
       text-shadow: 
@@ -58,8 +63,14 @@
          1px -1px 0 green,
         -1px  1px 0 green,
          1px  1px 0 green;
-      font-size: 1.5em; /* links maiores */
+      font-size: 1.5em;
       font-weight: bold;
+      padding: 4px 0;
+      cursor: pointer;
+    }
+
+    li a:hover {
+      color: limegreen;
     }
   </style>
 </head>
