@@ -8,18 +8,19 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #007f00, #3ca240, #007f00);
+      background-color: green;
       color: black;
       margin: 0;
-      padding: 20px;
+      padding: 0;
       font-size: 18px;
     }
 
-    main {
-      background-color: #3ca240;
-      padding: 30px;
-      margin: auto;
-      max-width: 1200px;
+    .container-main {
+      background-color: #5cb85c;
+      width: 70%;
+      margin: 30px auto;
+      padding: 20px;
+      box-shadow: 0 0 10px black;
     }
 
     .titulo-enrzan {
@@ -33,9 +34,8 @@
       text-align: center;
       font-size: 2em;
       border: 5px solid green;
-      background-color: rgba(0, 0, 0, 1);
-      margin: 40px auto 20px auto;
-      max-width: 1000px;
+      background-color: black;
+      margin-bottom: 20px;
     }
 
     .ano {
@@ -75,17 +75,17 @@
       margin-top: 10px;
     }
 
-    .container {
-      position: relative;
-      height: 50px;
-    }
-
     .back-button {
       width: 50px;
       height: auto;
       position: absolute;
-      right: 10px;
-      top: 10px;
+      right: 20px;
+      bottom: 20px;
+    }
+
+    .back-button-container {
+      position: relative;
+      height: 60px;
     }
   </style>
   <script>
@@ -96,7 +96,7 @@
   </script>
 </head>
 <body>
-  <main>
+  <div class="container-main">
     <div class="titulo-enrzan">Certificados e Premiações</div>
 
     <section>
@@ -151,9 +151,9 @@
       </div>
     </section>
 
-    <div class="container">
+    <div class="back-button-container">
       <a href="index.html"><img src="imagens/Round-Back-Button-PNG-Image-Background.png" alt="Voltar" class="back-button"></a>
     </div>
-  </main>
+  </div>
 </body>
 </html>
