@@ -1,5 +1,11 @@
 /* ========== ESTILO DO TEXTO DA ABA "APRESENTAÇÃO DO AUTOR" ========== */
 
+.author-text {
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: justify;
+}
+
 .author-text img {
   float: right;
   margin: 0 0 10px 20px;
@@ -11,11 +17,6 @@
   content: "";
   display: block;
   clear: both;
-}
-
-.author-text {
-  line-height: 1.6;
-  text-align: justify;
 }
 
 /* ========== LINKS ========== */
@@ -42,17 +43,19 @@
 /* ========== RESPONSIVIDADE PARA TELAS PEQUENAS ========== */
 
 @media (max-width: 768px) {
+  .author-text {
+    font-size: 17px;
+    line-height: 1.6;
+    text-align: left;
+    padding: 0 10px;
+  }
+
   .author-text img {
     float: none;
     display: block;
     margin: 0 auto 20px auto;
     width: 100%;
     max-width: 250px;
-  }
-
-  .author-text {
-    text-align: left;
-    padding: 0 10px;
   }
 
   .links ul {
