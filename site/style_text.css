@@ -1,16 +1,61 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+/* ========== ESTILO DO TEXTO DA ABA "APRESENTAÇÃO DO AUTOR" ========== */
+
+.author-text img {
+  float: right;
+  margin: 0 0 10px 20px;
+  width: 250px;
+  border-radius: 10px;
 }
 
-body {
-    background-color: green;
+.author-text::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
-main {
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 1000px;
-    margin: auto;
-    padding: 10px;
-    box-shadow: 50px 50px 50px black;
+.author-text {
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* ========== LINKS ========== */
+
+.links a {
+  color: black;
+  text-decoration: none;
+  text-shadow:
+    -1px -1px 0 green,
+     1px -1px 0 green,
+    -1px  1px 0 green,
+     1px  1px 0 green;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.links ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* ========== RESPONSIVIDADE PARA TELAS PEQUENAS ========== */
+
+@media (max-width: 768px) {
+  .author-text img {
+    float: none;
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .author-text {
+    text-align: left;
+    padding: 0 10px;
+  }
+
+  .links ul {
+    padding-left: 15px;
+  }
 }
