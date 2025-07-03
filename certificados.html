@@ -11,7 +11,7 @@
       font-family: Arial, sans-serif;
       background: linear-gradient(to right, #006400, #32CD32);
       color: black;
-      font-size: 1.3em; /* TAMANHO DE FONTE AJUSTADO */
+      font-size: 1.3em;
     }
 
     header {
@@ -66,6 +66,34 @@
       max-width: 100%;
       margin-top: 10px;
       border: 3px solid black;
+    }
+
+    /* Estilo da seta de voltar */
+    .voltar {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      background-color: black;
+      border: 3px solid green;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .voltar::before {
+      content: "⮌";
+      font-size: 1.5em;
+      color: green;
+    }
+
+    .voltar:hover {
+      background-color: #222;
     }
   </style>
 </head>
@@ -125,6 +153,9 @@
       <img id="cert_primeiros" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_Primeiros_Socorros_rotated_page-0001.jpg" alt="Primeiros Socorros">
     </div>
   </section>
+
+  <!-- Botão de voltar -->
+  <a class="voltar" href="index.html" title="Voltar para o menu principal"></a>
 
   <script>
     function toggleImagem(id) {
