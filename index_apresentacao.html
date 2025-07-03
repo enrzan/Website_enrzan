@@ -7,17 +7,18 @@
   <link rel="stylesheet" href="site/style_text.css" />
   <link rel="stylesheet" href="site/style_title.css" />
   <style>
-    .container {
-      position: relative;
-      height: 50vh;
+    body {
+      background-color: green;
+      margin: 0;
+      font-family: Arial, sans-serif;
     }
 
-    .back-button {
-      width: 50px;
-      height: auto;
-      position: absolute;
-      right: 10px;
-      top: 10px;
+    .container-main {
+      background-color: #5cb85c;
+      width: 70%;
+      margin: 30px auto;
+      padding: 20px;
+      box-shadow: 0 0 10px black;
     }
 
     .title {
@@ -31,11 +32,8 @@
       text-align: center;
       font-size: 2em;
       border: 5px solid green;
-      background-color: rgba(0, 0, 0, 1);
-    }
-
-    .links {
-      font-size: 1em;
+      background-color: black;
+      margin-bottom: 20px;
     }
 
     .links a {
@@ -57,10 +55,6 @@
       padding-left: 20px;
     }
 
-    .author-content {
-      padding: 20px;
-    }
-
     .author-text img {
       float: right;
       margin: 0 0 10px 20px;
@@ -72,6 +66,19 @@
       content: "";
       display: block;
       clear: both;
+    }
+
+    .back-button {
+      width: 50px;
+      height: auto;
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+    }
+
+    .back-button-container {
+      position: relative;
+      height: 60px;
     }
 
     @media (max-width: 700px) {
@@ -88,38 +95,36 @@
   </style>
 </head>
 <body>
-  <main>
+  <div class="container-main">
     <header>
       <h1 class="title">Apresentação do autor</h1>
     </header>
 
-    <article class="author-content">
-      <div class="author-text">
-        <img src="imagens/EnricoZRaimundo_Foto_Perfil.jpg" alt="Foto de Enrico Zangirolami Raimundo" />
+    <article class="author-text">
+      <img src="imagens/EnricoZRaimundo_Foto_Perfil.jpg" alt="Foto de Enrico Zangirolami Raimundo" />
 
-        <p>Meu nome é Enrico Zangirolami Raimundo. Sou discente da Universidade Federal do ABC no curso de Bacharelado em Ciências e Tecnologia (BC&T) e como curso específico farei o bacharelado em Engenharia de Instrumentação, Automação e Robótica (IAR).</p>
+      <p>Meu nome é Enrico Zangirolami Raimundo. Sou discente da Universidade Federal do ABC no curso de Bacharelado em Ciências e Tecnologia (BC&T) e como curso específico farei o bacharelado em Engenharia de Instrumentação, Automação e Robótica (IAR).</p>
 
-        <p>Fui aluno bolsista de Iniciação Científica (IC) na área de Engenharia de Materiais orientado pela Profa. Dra. Mara Cristina Lopes de Oliveira no projeto intitulado “Desenvolvimento de processo de anodização da liga de alumínio 2024-T3 com incorporação de materiais bidimensionais (2D) para aumento da resistência à corrosão e desgaste” (Processo CNPq 406291/2022-5 de 01/04/2024 a 31/03/2025).</p>
+      <p>Fui aluno bolsista de Iniciação Científica (IC) na área de Engenharia de Materiais orientado pela Profa. Dra. Mara Cristina Lopes de Oliveira no projeto intitulado “Desenvolvimento de processo de anodização da liga de alumínio 2024-T3 com incorporação de materiais bidimensionais (2D) para aumento da resistência à corrosão e desgaste” (Processo CNPq 406291/2022-5 de 01/04/2024 a 31/03/2025).</p>
 
-        <p>Atualmente iniciei minha segunda IC na área de Projeto de Circuitos Integrados de Radiofrequência orientado pelo Prof. Dr. Carlos Eduardo Capovilla.</p>
+      <p>Atualmente iniciei minha segunda IC na área de Projeto de Circuitos Integrados de Radiofrequência orientado pelo Prof. Dr. Carlos Eduardo Capovilla.</p>
 
-        <p>Além disso, sou voluntário no IEEE (Institute of Electrical and Electronics Engineers), mais especificamente na RAS (Robotics and Automation Society), no qual visamos o desenvolvimento de robôs de combate para competições, para fins de pesquisas.</p>
+      <p>Além disso, sou voluntário no IEEE (Institute of Electrical and Electronics Engineers), mais especificamente na RAS (Robotics and Automation Society), no qual visamos o desenvolvimento de robôs de combate para competições, para fins de pesquisas.</p>
 
-        <p>Tenho como paixão circuitos elétricos, programação e simulação em Softwares CAD (Computer-Aided Design), busco me aprofundar nessa área, e de preferência dominá-las.</p>
+      <p>Tenho como paixão circuitos elétricos, programação e simulação em Softwares CAD (Computer-Aided Design), busco me aprofundar nessa área, e de preferência dominá-las.</p>
 
-        <ul class="links">
-          <li><a href="https://github.com/enrzan">GitHub</a></li>
-          <li><a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K1523002T0">Lattes</a></li>
-          <li><a href="https://www.linkedin.com/in/enrico-zangirolami-raimundo-a85987359/">Linkedin</a></li>
-        </ul>
-      </div>
+      <ul class="links">
+        <li><a href="https://github.com/enrzan">GitHub</a></li>
+        <li><a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K1523002T0">Lattes</a></li>
+        <li><a href="https://www.linkedin.com/in/enrico-zangirolami-raimundo-a85987359/">Linkedin</a></li>
+      </ul>
     </article>
 
-    <div class="container">
+    <div class="back-button-container">
       <a href="index.html">
         <img src="imagens/Round-Back-Button-PNG-Image-Background.png" alt="Voltar" class="back-button" />
       </a>
     </div>
-  </main>
+  </div>
 </body>
 </html>
