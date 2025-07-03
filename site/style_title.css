@@ -1,14 +1,11 @@
-/* ========== CONFIGURAÇÕES GERAIS ========== */
-
 body {
   background-color: green;
   margin: 0;
   font-family: Arial, sans-serif;
-  font-size: 18px;          /* Fonte-base aumentada */
+  font-size: 18px;          
   line-height: 1.6;
 }
 
-/* ========== ESTILO TÍTULOS PRINCIPAIS ========== */
 
 .title, .titulo-enrzan {
   color: black;
@@ -25,7 +22,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* ========== LINKS E ESTILOS DE NAVEGAÇÃO ========== */
 
 .links a {
   color: black;
@@ -46,7 +42,6 @@ body {
   padding-left: 20px;
 }
 
-/* ========== BOTÃO VOLTAR ========== */
 
 .back-button {
   width: 50px;
@@ -61,7 +56,6 @@ body {
   height: 60px;
 }
 
-/* ========== CONTAINER CENTRAL PADRÃO ========== */
 
 .container-main {
   background-color: #5cb85c;
@@ -71,7 +65,6 @@ body {
   box-shadow: 0 0 10px black;
 }
 
-/* ========== RESPONSIVIDADE PARA TELAS PEQUENAS ========== */
 
 @media (max-width: 768px) {
   body {
