@@ -14,7 +14,7 @@
 
     main {
       background-color: #3ca240;
-      max-width: 1000px;
+      max-width: 900px;
       margin: 0 auto;
       padding: 20px;
       box-shadow: 0 0 40px #003300;
@@ -27,20 +27,22 @@
          1px -1px 0 green,
         -1px  1px 0 green,
          1px  1px 0 green;
-      padding: 10px;
+      padding: 12px;
       text-align: center;
-      font-size: 2em;
+      font-size: 2.5em; /* maior, como no exemplo */
       border: 5px solid green;
       background-color: rgba(0, 0, 0, 1);
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
 
     .imagem-central {
       display: block;
       margin: 20px auto;
       border: 5px solid green;
-      max-width: 100%;
+      width: 100%;
       height: auto;
+      max-height: 300px; /* altura máxima ajustada como no exemplo */
+      object-fit: cover;
     }
 
     ul {
@@ -56,6 +58,7 @@
          1px -1px 0 green,
         -1px  1px 0 green,
          1px  1px 0 green;
+      font-size: 1.3em; /* aumenta o tamanho da fonte dos links */
     }
   </style>
 </head>
@@ -63,7 +66,6 @@
   <main>
     <div class="titulo-enrzan">enrzan</div>
 
-    <!-- Caminho da imagem corrigido -->
     <img src="imagens/mother_circuit.png" alt="Imagem central" class="imagem-central" />
 
     <ul>
