@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Certificados e Premiações</title>
-  <link rel="stylesheet" href="site/style_title.css" />
+  <link rel="stylesheet" href="site/style_title.css">
   <style>
     body {
       font-family: Arial, sans-serif;
-      font-size: 18px;
-      margin: 30px;
-      background-color: #3ca240; /* Mesma cor do Arduino */
+      background: linear-gradient(to right, #007f00, #3ca240, #007f00);
       color: black;
+      margin: 0;
+      padding: 20px;
+      font-size: 18px;
+    }
+
+    main {
+      background-color: #3ca240;
+      padding: 30px;
+      margin: auto;
+      max-width: 1200px;
     }
 
     h1 {
-      text-align: center;
       font-size: 2em;
+      text-align: center;
       background-color: black;
       color: green;
       border: 5px solid green;
       padding: 10px;
-      text-shadow: -1px -1px 0 green, 1px -1px 0 green, -1px 1px 0 green, 1px 1px 0 green;
+      text-shadow:
+        -1px -1px 0 green,
+         1px -1px 0 green,
+        -1px  1px 0 green,
+         1px  1px 0 green;
+      margin-bottom: 30px;
     }
 
     .ano {
       font-weight: bold;
       font-size: 1.5em;
-      margin-top: 40px;
-      color: black;
-      text-shadow: -1px -1px 0 green, 1px -1px 0 green, -1px 1px 0 green, 1px 1px 0 green;
+      margin-top: 30px;
+      text-shadow:
+        -1px -1px 0 green,
+         1px -1px 0 green,
+        -1px  1px 0 green,
+         1px  1px 0 green;
     }
 
     .certificado {
@@ -39,20 +55,24 @@
     .certificado a {
       cursor: pointer;
       color: black;
-      text-shadow: -1px -1px 0 green, 1px -1px 0 green, -1px 1px 0 green, 1px 1px 0 green;
       text-decoration: underline;
+      text-shadow:
+        -1px -1px 0 green,
+         1px -1px 0 green,
+        -1px  1px 0 green,
+         1px  1px 0 green;
     }
 
     .imagem-certificado {
       display: none;
-      max-width: 90%;
-      margin: 10px 0;
+      max-width: 100%;
       border: 3px solid black;
+      margin-top: 10px;
     }
 
     .container {
       position: relative;
-      height: 50vh;
+      height: 50px;
     }
 
     .back-button {
@@ -71,70 +91,59 @@
     }
   </script>
 </head>
-
 <body>
   <main>
-    <header>
-      <h1>Certificados e Premiações</h1>
-    </header>
+    <h1>Certificados e Premiações</h1>
 
     <section>
       <div class="ano">2025</div>
-
       <div class="certificado">
         <a onclick="toggleImagem('cert_ic')">Declaração de Iniciação Científica - UFABC</a>
-        <img id="cert_ic" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_IC_page-0001.jpg" alt="Certificado IC" />
+        <img id="cert_ic" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_IC_page-0001.jpg" alt="Certificado IC">
       </div>
-
       <div class="certificado">
         <a onclick="toggleImagem('cert_vencedor')">Robô Mais Bonito - Tamandutech</a>
-        <img id="cert_vencedor" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_Vencedor_Mais_Bonito_Processo_Seletivo_2025_Tamandutech_rotated_page-0001.jpg" alt="Certificado Tamandutech" />
+        <img id="cert_vencedor" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_Vencedor_Mais_Bonito_Processo_Seletivo_2025_Tamandutech_rotated_page-0001.jpg" alt="Certificado Vencedor">
       </div>
     </section>
 
     <section>
       <div class="ano">2024</div>
-
       <div class="certificado">
         <a onclick="toggleImagem('cert_xiv')">XIV Encontro de Iniciação Científica - UFABC</a>
-        <img id="cert_xiv" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_XIV_Encontro_IC_UFABC_page-0001.jpg" alt="Certificado XIV" />
+        <img id="cert_xiv" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_XIV_Encontro_IC_UFABC_page-0001.jpg" alt="Certificado XIV">
       </div>
-
       <div class="certificado">
         <a onclick="toggleImagem('cert_cad')">Curso CAD - UFABC</a>
-        <img id="cert_cad" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_CAD.png" alt="Certificado CAD" />
+        <img id="cert_cad" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_CAD.png" alt="Certificado CAD">
       </div>
     </section>
 
     <section>
       <div class="ano">2023</div>
-
       <div class="certificado">
         <a onclick="toggleImagem('cert_catastrofe')">Simulação de Catástrofe - FMABC</a>
-        <img id="cert_catastrofe" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_Treinamento_Catastrofe_FMABC.png" alt="Catástrofe FMABC" />
+        <img id="cert_catastrofe" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_Treinamento_Catastrofe_FMABC.png" alt="Certificado Catástrofe">
       </div>
     </section>
 
     <section>
       <div class="ano">2022</div>
-
       <div class="certificado">
         <a onclick="toggleImagem('cert_oba')">Olimpíada Brasileira de Astronomia - OBA</a>
-        <img id="cert_oba" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_OBA-girado_page-0001.jpg" alt="Certificado OBA" />
+        <img id="cert_oba" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_OBA-girado_page-0001.jpg" alt="Certificado OBA">
       </div>
-
       <div class="certificado">
         <a onclick="toggleImagem('cert_em')">Certificado de Conclusão - Ensino Médio</a>
-        <img id="cert_em" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_EM_page-0001.jpg" alt="Certificado EM" />
+        <img id="cert_em" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_EM_page-0001.jpg" alt="Certificado EM">
       </div>
     </section>
 
     <section>
       <div class="ano">2018</div>
-
       <div class="certificado">
         <a onclick="toggleImagem('cert_primeiros')">Curso de Primeiros Socorros</a>
-        <img id="cert_primeiros" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_Primeiros_Socorros_rotated_page-0001.jpg" alt="Primeiros Socorros" />
+        <img id="cert_primeiros" class="imagem-certificado" src="img/certificados/EnricoZRaimundo_Certificado_Primeiros_Socorros_rotated_page-0001.jpg" alt="Primeiros Socorros">
       </div>
     </section>
 
