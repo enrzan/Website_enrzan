@@ -6,26 +6,18 @@
     <title class="title">Arduino</title>
     <link rel="stylesheet" href="site/style_title.css">
     <style>
-        .container {
-            position: relative;
-            height: 50vh;
+        body {
+            background-color: green;
+            margin: 0;
+            font-family: Arial, sans-serif;
         }
 
-        .img-resize {
-            width: 300px;
-            height: auto; 
-            position: absolute;
-            right: 175px;
-            top: 0%;
-            transform: translateY(-125%);
-        }
-
-        .back-button {
-            width: 50px;
-            height: auto;
-            position: absolute;
-            right: 10px;
-            top: 10px;
+        .container-main {
+            background-color: #5cb85c;
+            width: 70%;
+            margin: 30px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px black;
         }
 
         .title {
@@ -39,7 +31,8 @@
             text-align: center;
             font-size: 2em;
             border: 5px solid green;
-            background-color: rgba(0, 0, 0, 1);
+            background-color: black;
+            margin-bottom: 20px;
         }
 
         .links {
@@ -64,23 +57,45 @@
             list-style-type: disc;
             padding-left: 20px;
         }
+
+        .back-button {
+            width: 50px;
+            height: auto;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+        }
+
+        .back-button-container {
+            position: relative;
+            height: 60px;
+        }
     </style>
 </head>
 <body>
-    <main>
+    <div class="container-main">
         <header>
             <h1 class="title">Arduino</h1>
         </header>
+
         <article>
             <p>O Arduino foi o meu ponto de partida para a área de circuitos, desde sempre tive um gosto em desmontar circuitos eletrônicos, mas apenas para diversão e geralmente sem ter que remontá-los corretamente. Entretanto, basicamente da noite para o dia comecei a mexer com uma placa de Arduino Uno que ganhei e com o Autodesk Tinkercad para auxiliar em meus projetos, além de inúmeras apostilas e conteúdos digitais gratuitos. Com isso, comecei um novo hobby que aos poucos se tornou minha paixão e que pretendo me especializar e aperfeiçoar.</p>
+
             <p>Conforme fazia meus projetos, eu os salvava e guardava-os de forma a ficarem organizados e servirem como uma forma de consulta para outros projetos.</p>
+
             <p>Pensando nisso, deixo a seguir os links, respectivamente de meu repositório no GitHub com os códigos de Arduino escritos em C++ e meu perfil no Tinkercad no qual é possível ver todos os meus projetos, inclusive com seus respectivos códigos.</p>
-            <li class="links"><a href="https://github.com/enrzan/Arduino_Codigos">Repositório de Arduino</a></li>
-            <li class="links"><a href="https://www.tinkercad.com/users/5zlXzHxFWNF?type=circuits">Projetos no Tinkercad</a></li>
+
+            <ul class="links">
+                <li><a href="https://github.com/enrzan/Arduino_Codigos">Repositório de Arduino</a></li>
+                <li><a href="https://www.tinkercad.com/users/5zlXzHxFWNF?type=circuits">Projetos no Tinkercad</a></li>
+            </ul>
         </article>
-        <div class="container">
-            <a href="index.html"><img src="imagens/Round-Back-Button-PNG-Image-Background.png" alt="Voltar" class="back-button"></a>
+
+        <div class="back-button-container">
+            <a href="index.html">
+                <img src="imagens/Round-Back-Button-PNG-Image-Background.png" alt="Voltar" class="back-button">
+            </a>
         </div>
-    </main>
+    </div>
 </body>
 </html>
